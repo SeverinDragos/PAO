@@ -1,6 +1,5 @@
 package cinema;
 
-import cinema.domain.entity.*;
 import cinema.services.CinemaService;
 import cinema.services.ShowService;
 

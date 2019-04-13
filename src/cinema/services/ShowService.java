@@ -7,7 +7,7 @@ import cinema.domain.entity.Show;
 import cinema.domain.repository.ShowRepository;
 
 public class ShowService {
-    ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();
+    private ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();
 
     public void listMoviesWithGenre(String genre) {
         Show[] shows = showRepository.getShows();

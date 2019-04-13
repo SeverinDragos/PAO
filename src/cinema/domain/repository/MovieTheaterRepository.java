@@ -3,7 +3,7 @@ package cinema.domain.repository;
 import cinema.domain.entity.MovieTheater;
 
 public class MovieTheaterRepository {
-    MovieTheater[] movieTheaters = new MovieTheater[] {
+    private MovieTheater[] movieTheaters = new MovieTheater[] {
             new MovieTheater(250, new int[]{67, 93, 4}, new int[]{1, 2, 19}, 1),
             new MovieTheater(180, new int[]{37, 102, 82}, new int[]{3, 20, 21}, 2),
             new MovieTheater(210, new int[]{29, 38, 64}, new int[]{22, 4, 5}, 3),

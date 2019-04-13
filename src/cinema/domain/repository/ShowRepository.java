@@ -5,7 +5,7 @@ import cinema.domain.entity.Play;
 import cinema.domain.entity.Show;
 
 public class ShowRepository {
-    Show[] shows = new Show[] {
+    private Show[] shows = new Show[] {
             new Movie("action", "Fast and Furious", 103, "3D", 1),
             new Movie("drama", "Before I met you", 89, "2D", 2),
             new Movie("kids", "Frozen", 109, "3D", 3),
