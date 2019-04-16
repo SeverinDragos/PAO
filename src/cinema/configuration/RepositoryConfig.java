@@ -1,14 +1,13 @@
 package cinema.configuration;
 
-import cinema.domain.repository.CinemaRepository;
-import cinema.domain.repository.MovieTheaterRepository;
-import cinema.domain.repository.ShowRepository;
-import cinema.domain.repository.TicketRepository;
+import cinema.domain.repository.*;
+
+import java.io.FileNotFoundException;
 
 public class RepositoryConfig {
     private final CinemaRepository cinemaRepository = new CinemaRepository();
     private final MovieTheaterRepository movieTheaterRepository = new MovieTheaterRepository();
-    private final ShowRepository showRepository = new ShowRepository();
+    private final ShowRepositoryFile showRepository = new ShowRepositoryFile("", "");
     private final TicketRepository ticketRepository = new TicketRepository();
     private static RepositoryConfig Instance = new RepositoryConfig();
 
@@ -22,7 +21,7 @@ public class RepositoryConfig {
         return movieTheaterRepository;
     }
 
-    public ShowRepository getShowRepository() {
+    public ShowRepositoryFile getShowRepository() {
         return showRepository;
     }
 
