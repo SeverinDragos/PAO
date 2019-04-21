@@ -1,6 +1,5 @@
 package cinema.services;
 
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -8,6 +7,7 @@ import cinema.configuration.RepositoryConfig;
 import cinema.domain.entity.*;
 import cinema.domain.repository.CinemaRepository;
 import cinema.domain.repository.MovieTheaterRepository;
+import cinema.domain.repository.MovieTheaterRepositoryStatic;
 import cinema.domain.repository.ShowRepository;
 
 public class CinemaService {

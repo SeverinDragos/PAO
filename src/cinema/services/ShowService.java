@@ -5,6 +5,7 @@ import cinema.domain.entity.Movie;
 import cinema.domain.entity.Play;
 import cinema.domain.entity.Show;
 import cinema.domain.repository.ShowRepository;
+import cinema.domain.repository.ShowRepositoryStatic;
 
 public class ShowService {
     private ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();

@@ -1,5 +1,10 @@
 package cinema;
 
+import cinema.configuration.RepositoryConfig;
+import cinema.domain.entity.MovieTheater;
+import cinema.domain.entity.Show;
+import cinema.domain.repository.MovieTheaterRepository;
+import cinema.domain.repository.ShowRepository;
 import cinema.services.CinemaService;
 import cinema.services.ShowService;
 
@@ -18,5 +23,13 @@ public class Start {
 //        showService.listPlaysWithGenre("comedy");
 //        showService.list3DMovies();
 //        showService.list2DMovies();
+
+        MovieTheaterRepository movieTheaterRepositoryStatic = RepositoryConfig.getInstance().getMovieTheaterRepository();
+        MovieTheater movieTheater = movieTheaterRepositoryStatic.getMovieTheaterById(8);
+        System.out.println(movieTheater.toString());
+
+        ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();
+        Show show = showRepository.getShowById(6);
+        System.out.println(show.toString());
     }
 }

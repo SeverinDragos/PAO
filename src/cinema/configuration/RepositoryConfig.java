@@ -6,12 +6,20 @@ import java.io.FileNotFoundException;
 
 public class RepositoryConfig {
     private final CinemaRepository cinemaRepository = new CinemaRepository();
-    private final MovieTheaterRepository movieTheaterRepository = new MovieTheaterRepository();
-    private final ShowRepositoryFile showRepository = new ShowRepositoryFile("", "");
+    private MovieTheaterRepository movieTheaterRepository = null;
+    private ShowRepository showRepository = null;
     private final TicketRepository ticketRepository = new TicketRepository();
     private static RepositoryConfig Instance = new RepositoryConfig();
 
-    private RepositoryConfig() {}
+    private RepositoryConfig() {
+        try {
+            showRepository = new ShowRepositoryFile("MovieFile.csv", "PlayFile.csv");
+            movieTheaterRepository = new MovieTheaterRepositoryFile("MovieTheaterFile.csv");
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("Incorrect file path!");
+        }
+    }
 
     public CinemaRepository getCinemaRepository() {
         return cinemaRepository;
@@ -21,7 +29,7 @@ public class RepositoryConfig {
         return movieTheaterRepository;
     }
 
-    public ShowRepositoryFile getShowRepository() {
+    public ShowRepository getShowRepository() {
         return showRepository;
     }
 

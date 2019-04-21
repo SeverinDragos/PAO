@@ -8,8 +8,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ShowRepositoryFile {
-    private Show[] shows = new Show[1000];
+public class ShowRepositoryFile implements ShowRepository{
+    private Show[] shows = new Show[100];
 
     public ShowRepositoryFile(String movieFileName, String playFileName) throws FileNotFoundException {
         FileInputStream fileInputStream = new FileInputStream(movieFileName);
@@ -18,7 +18,7 @@ public class ShowRepositoryFile {
         while(scanner.hasNext()) {
             String line = scanner.nextLine();
             String[] values = line.split(",");
-            shows[counter++] = new Movie(values[0], values[1], new Integer(values[2]), values[3], new Integer(values[4]));
+            shows[counter++] = new Movie(values[0], values[1], Integer.parseInt(values[2]), values[3],Integer.parseInt(values[4]));
         }
 
         FileInputStream fileInputStream2 = new FileInputStream(playFileName);
@@ -26,7 +26,7 @@ public class ShowRepositoryFile {
         while (scanner2.hasNext()) {
             String line = scanner2.nextLine();
             String[] values = line.split(",");
-            shows[counter++] = new Play(values[0], values[1], new Integer(values[2]), values[3], new Integer(values[4]));
+            shows[counter++] = new Play(values[0], values[1], Integer.parseInt(values[2]), values[3], Integer.parseInt(values[4]));
         }
     }
 
