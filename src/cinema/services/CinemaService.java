@@ -2,13 +2,15 @@ package cinema.services;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 import cinema.configuration.RepositoryConfig;
 import cinema.domain.entity.*;
 import cinema.domain.repository.CinemaRepository;
+import cinema.domain.repository.CinemaRepositoryStatic;
 import cinema.domain.repository.MovieTheaterRepository;
-import cinema.domain.repository.MovieTheaterRepositoryStatic;
 import cinema.domain.repository.ShowRepository;
+import cinema.tool.CsvWriter;
 
 public class CinemaService {
     private CinemaRepository cinemaRepository = RepositoryConfig.getInstance().getCinemaRepository();
@@ -16,9 +18,12 @@ public class CinemaService {
     private ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();
 
     public void listAllCinemas() {
-        Cinema[] cinemas = cinemaRepository.getCinemas();
-        for (int i = 0; i < cinemas.length; i++)
-            System.out.println(cinemas[i].getAdress().getCity() + " " + cinemas[i].getAdress().getMall());
+        CsvWriter.getInstance().write("listAllCinemas , ");
+        Iterator<Cinema> it = cinemaRepository.getCinemas().iterator();
+        while (it.hasNext()) {
+            Cinema cinema = it.next();
+            System.out.println(cinema.getAdress().getCity() + " " + cinema.getAdress().getMall());
+        }
     }
 
     private Iterator<Show> getShowsOfCinema(Cinema cinema) {
@@ -45,6 +50,7 @@ public class CinemaService {
     }
 
     public void listAvailableShows(String mall) {
+        CsvWriter.getInstance().write("listAvailableShows , ");
         Cinema cinema = cinemaRepository.getCinemaByMall(mall);
         if (cinema == null) {
             System.out.println("Acest mall nu exista");
@@ -63,6 +69,7 @@ public class CinemaService {
     }
 
     public void listAvailableMovies(String mall) {
+        CsvWriter.getInstance().write("listAvailableMovies , ");
         Cinema cinema = cinemaRepository.getCinemaByMall(mall);
         if (cinema == null) {
             System.out.println("Acest mall nu exista");
@@ -84,6 +91,7 @@ public class CinemaService {
     }
 
     public void listAvailablePlays(String mall) {
+        CsvWriter.getInstance().write("listAvailablePlays , ");
         Cinema cinema = cinemaRepository.getCinemaByMall(mall);
         if (cinema == null) {
             System.out.println("Acest mall nu exista");
@@ -105,16 +113,18 @@ public class CinemaService {
     }
 
     public void searchForMovie(String name) {
-        Cinema[] cinemas = cinemaRepository.getCinemas();
+        CsvWriter.getInstance().write("searchForMovie , ");
+        Iterator<Cinema> it = cinemaRepository.getCinemas().iterator();
         boolean found = false;
-        for (int i = 0; i < cinemas.length; i++) {
-            Iterator<Show> showIterator = getShowsOfCinema(cinemas[i]);
+        while (it.hasNext()) {
+            Cinema cinema = it.next();
+            Iterator<Show> showIterator = getShowsOfCinema(cinema);
             if (showIterator == null)
                 return;
             while (showIterator.hasNext()) {
                 Show show = showIterator.next();
                 if (show instanceof Movie && show.getName().toLowerCase().equals(name.toLowerCase())) {
-                    System.out.println(cinemas[i].getAdress().getCity() + " " + cinemas[i].getAdress().getMall());
+                    System.out.println(cinema.getAdress().getCity() + " " + cinema.getAdress().getMall());
                     found = true;
                     break;
                 }
@@ -125,16 +135,18 @@ public class CinemaService {
     }
 
     public void searchForPlay(String name) {
-        Cinema[] cinemas = cinemaRepository.getCinemas();
+        CsvWriter.getInstance().write("searchForPlay , ");
+        Iterator<Cinema> it = cinemaRepository.getCinemas().iterator();
         boolean found = false;
-        for (int i = 0; i < cinemas.length; i++) {
-            Iterator<Show> showIterator = getShowsOfCinema(cinemas[i]);
+        while(it.hasNext()) {
+            Cinema cinema = it.next();
+            Iterator<Show> showIterator = getShowsOfCinema(cinema);
             if (showIterator == null)
                 return;
             while (showIterator.hasNext()) {
                 Show show = showIterator.next();
                 if (show instanceof Play && show.getName().toLowerCase().equals(name.toLowerCase())) {
-                    System.out.println(cinemas[i].getAdress().getCity() + " " + cinemas[i].getAdress().getMall());
+                    System.out.println(cinema.getAdress().getCity() + " " + cinema.getAdress().getMall());
                     found = true;
                     break;
                 }

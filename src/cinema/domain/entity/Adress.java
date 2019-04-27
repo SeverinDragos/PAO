@@ -27,4 +27,11 @@ public class Adress {
         this.mall = mall;
     }
 
+    @Override
+    public String toString() {
+        return "Adress{" +
+                "city='" + city + '\'' +
+                ", mall='" + mall + '\'' +
+                '}';
+    }
 }

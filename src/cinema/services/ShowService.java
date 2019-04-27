@@ -6,11 +6,13 @@ import cinema.domain.entity.Play;
 import cinema.domain.entity.Show;
 import cinema.domain.repository.ShowRepository;
 import cinema.domain.repository.ShowRepositoryStatic;
+import cinema.tool.CsvWriter;
 
 public class ShowService {
     private ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();
 
     public void listMoviesWithGenre(String genre) {
+        CsvWriter.getInstance().write("listMoviesWithGenre , ");
         Show[] shows = showRepository.getShows();
         boolean found = false;
         for (int i = 0; i < shows.length; i++) {
@@ -24,6 +26,7 @@ public class ShowService {
     }
 
     public void listPlaysWithGenre(String genre) {
+        CsvWriter.getInstance().write("listPlaysWithGenre , ");
         Show[] shows = showRepository.getShows();
         boolean found = false;
         for (int i = 0; i < shows.length; i++) {
@@ -37,6 +40,7 @@ public class ShowService {
     }
 
     public void list2DMovies() {
+        CsvWriter.getInstance().write("list2DMovies , ");
         Show[] shows = showRepository.getShows();
         boolean found = false;
         for (int i = 0; i < shows.length; i++) {
@@ -53,6 +57,7 @@ public class ShowService {
     }
 
     public void list3DMovies() {
+        CsvWriter.getInstance().write("list3DMovies , ");
         Show[] shows = showRepository.getShows();
         boolean found = false;
         for (int i = 0; i < shows.length; i++) {

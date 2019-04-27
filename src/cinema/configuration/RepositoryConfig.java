@@ -5,7 +5,7 @@ import cinema.domain.repository.*;
 import java.io.FileNotFoundException;
 
 public class RepositoryConfig {
-    private final CinemaRepository cinemaRepository = new CinemaRepository();
+    private CinemaRepository cinemaRepository = null;
     private MovieTheaterRepository movieTheaterRepository = null;
     private ShowRepository showRepository = null;
     private final TicketRepository ticketRepository = new TicketRepository();
@@ -15,6 +15,7 @@ public class RepositoryConfig {
         try {
             showRepository = new ShowRepositoryFile("MovieFile.csv", "PlayFile.csv");
             movieTheaterRepository = new MovieTheaterRepositoryFile("MovieTheaterFile.csv");
+            cinemaRepository = new CinemaRepositoryFile("CinemaFile.csv");
         }
         catch (FileNotFoundException e) {
             System.out.println("Incorrect file path!");

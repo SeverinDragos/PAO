@@ -1,6 +1,8 @@
 package cinema.domain.entity;
 
 
+import java.util.Arrays;
+
 public class Cinema {
     private int[] movieTheatersId;
     private Adress adress;
@@ -42,4 +44,11 @@ public class Cinema {
         this.adress = adress;
     }
 
+    @Override
+    public String toString() {
+        return "Cinema{" +
+                "movieTheatersId=" + Arrays.toString(movieTheatersId) +
+                ", adress=" + adress +
+                '}';
+    }
 }
