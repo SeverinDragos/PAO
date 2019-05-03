@@ -1,6 +1,6 @@
 package cinema.domain.entity;
 
-public abstract class Show {
+public abstract class Show implements Comparable<Show>{
     protected String genre;
     protected String name;
     protected int duration;
@@ -64,5 +64,9 @@ public abstract class Show {
                 ", duration=" + duration +
                 ", id=" + id +
                 '}';
+    }
+
+    public int compareTo(Show ob) {
+        return this.id - ob.id;
     }
 }

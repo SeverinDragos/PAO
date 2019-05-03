@@ -8,16 +8,20 @@ import cinema.domain.repository.ShowRepository;
 import cinema.domain.repository.ShowRepositoryStatic;
 import cinema.tool.CsvWriter;
 
+import java.util.Iterator;
+import java.util.Set;
+
 public class ShowService {
     private ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();
 
     public void listMoviesWithGenre(String genre) {
         CsvWriter.getInstance().write("listMoviesWithGenre , ");
-        Show[] shows = showRepository.getShows();
+        Iterator<Show> it = showRepository.getShows().iterator();
         boolean found = false;
-        for (int i = 0; i < shows.length; i++) {
-            if (shows[i] instanceof Movie && shows[i].getGenre().toLowerCase().equals(genre.toLowerCase())) {
-                System.out.println(shows[i].toString());
+        while (it.hasNext()) {
+            Show show = it.next();
+            if (show instanceof Movie && show.getGenre().toLowerCase().equals(genre.toLowerCase())) {
+                System.out.println(show.toString());
                 found = true;
             }
         }
@@ -27,11 +31,12 @@ public class ShowService {
 
     public void listPlaysWithGenre(String genre) {
         CsvWriter.getInstance().write("listPlaysWithGenre , ");
-        Show[] shows = showRepository.getShows();
+        Iterator<Show> it = showRepository.getShows().iterator();
         boolean found = false;
-        for (int i = 0; i < shows.length; i++) {
-            if (shows[i] instanceof Play && shows[i].getGenre().toLowerCase().equals(genre.toLowerCase())) {
-                System.out.println(shows[i].toString());
+        while (it.hasNext()) {
+            Show show = it.next();
+            if (show instanceof Play && show.getGenre().toLowerCase().equals(genre.toLowerCase())) {
+                System.out.println(show.toString());
                 found = true;
             }
         }
@@ -41,13 +46,13 @@ public class ShowService {
 
     public void list2DMovies() {
         CsvWriter.getInstance().write("list2DMovies , ");
-        Show[] shows = showRepository.getShows();
+        Iterator<Show> it = showRepository.getShows().iterator();
         boolean found = false;
-        for (int i = 0; i < shows.length; i++) {
-            if (shows[i] instanceof Movie) {
-                Movie temp = (Movie)shows[i];
-                if (temp.getType().toLowerCase().equals("2d")) {
-                    System.out.println(shows[i].toString());
+        while (it.hasNext()) {
+            Show show = it.next();
+            if (show instanceof Movie) {
+                if (((Movie) show).getType().toLowerCase().equals("2d")) {
+                    System.out.println(show.toString());
                     found = true;
                 }
             }
@@ -58,13 +63,13 @@ public class ShowService {
 
     public void list3DMovies() {
         CsvWriter.getInstance().write("list3DMovies , ");
-        Show[] shows = showRepository.getShows();
+        Iterator<Show> it = showRepository.getShows().iterator();
         boolean found = false;
-        for (int i = 0; i < shows.length; i++) {
-            if (shows[i] instanceof Movie) {
-                Movie temp = (Movie)shows[i];
-                if (temp.getType().toLowerCase().equals("3d")) {
-                    System.out.println(shows[i].toString());
+        while (it.hasNext()) {
+            Show show = it.next();
+            if (show instanceof Movie) {
+                if (((Movie) show).getType().toLowerCase().equals("3d")) {
+                    System.out.println(show.toString());
                     found = true;
                 }
             }

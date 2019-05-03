@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class MovieTheaterRepositoryFile implements MovieTheaterRepository{
 
-    private List movieTheaters = new LinkedList<MovieTheater>();
+    private List<MovieTheater> movieTheaters = new LinkedList<>();
 
     public MovieTheaterRepositoryFile(String movieTheatersFileName) throws FileNotFoundException {
         FileInputStream fileInputStream = new FileInputStream(movieTheatersFileName);
@@ -34,7 +34,7 @@ public class MovieTheaterRepositoryFile implements MovieTheaterRepository{
         }
     }
 
-    public List getMovieTheaters() {
+    public List<MovieTheater> getMovieTheaters() {
         return movieTheaters;
     }
 
