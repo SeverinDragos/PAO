@@ -1,14 +1,18 @@
 package cinema;
 
+import cinema.configuration.RepositoryConfig;
+import cinema.domain.entity.Show;
+import cinema.domain.repository.ShowRepository;
 import cinema.services.CinemaService;
 import cinema.services.ShowService;
+import cinema.tool.JDBCInitializer;
 
-
-public class Start {
+public class Start{
 
     public static void main(String[] args) {
-        CinemaService cinemaService = new CinemaService();
-        ShowService showService = new ShowService();
+        JDBCInitializer.initializeDB();
+//        CinemaService cinemaService = new CinemaService();
+//        ShowService showService = new ShowService();
 //        cinemaService.listAllCinemas();
 //        cinemaService.listAvailableShows("iulius mall");
 //        cinemaService.listAvailableMovies("iulius mall");
@@ -19,5 +23,6 @@ public class Start {
 //        showService.listPlaysWithGenre("comedy");
 //        showService.list3DMovies();
 //        showService.list2DMovies();
+//        ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();
     }
 }
