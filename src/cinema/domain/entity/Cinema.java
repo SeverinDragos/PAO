@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class Cinema {
     private int[] movieTheatersId;
     private Adress adress;
+    private int id;
 
     public Cinema() {}
 
@@ -16,11 +17,12 @@ public class Cinema {
         this.adress = ob.adress;
     }
 
-    public Cinema(int[] movieTheatersId, Adress adress) {
+    public Cinema(int[] movieTheatersId, Adress adress, int id) {
         this.movieTheatersId = new int[movieTheatersId.length];
         for (int i = 0; i < this.movieTheatersId.length; i++)
             this.movieTheatersId[i] = movieTheatersId[i];
         this.adress = adress;
+        this.id = id;
     }
 
     public int[] getMovieTheatersId() {
@@ -42,6 +44,14 @@ public class Cinema {
 
     public void setAdress(Adress adress) {
         this.adress = adress;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override

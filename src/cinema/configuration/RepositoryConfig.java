@@ -7,13 +7,13 @@ import java.io.FileNotFoundException;
 public class RepositoryConfig {
     private CinemaRepository cinemaRepository = null;
     private MovieTheaterRepository movieTheaterRepository = null;
-    private ShowRepository showRepository = null;
+    private ShowRepository showRepository = new ShowRepositoryDB();
     private final TicketRepository ticketRepository = new TicketRepository();
     private static RepositoryConfig Instance = new RepositoryConfig();
 
     private RepositoryConfig() {
         try {
-            showRepository = new ShowRepositoryFile("MovieFile.csv", "PlayFile.csv");
+//            showRepository = new ShowRepositoryFile("MovieFile.csv", "PlayFile.csv");
             movieTheaterRepository = new MovieTheaterRepositoryFile("MovieTheaterFile.csv");
             cinemaRepository = new CinemaRepositoryFile("CinemaFile.csv");
         }

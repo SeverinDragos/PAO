@@ -26,7 +26,7 @@ public class CinemaRepositoryFile implements CinemaRepository{
             while (Integer.parseInt(values[counter]) != -1)
                 movieTheatersId[ind++] = Integer.parseInt(values[counter++]);
             counter++;
-            cinemas.add(new Cinema(movieTheatersId, new Adress(values[counter], values[counter + 1])));
+            cinemas.add(new Cinema(movieTheatersId, new Adress(values[counter], values[counter + 1]), Integer.parseInt(values[counter+ 2])));
         }
     }
 

@@ -7,6 +7,8 @@ import cinema.services.CinemaService;
 import cinema.services.ShowService;
 import cinema.tool.JDBCInitializer;
 
+import java.util.Iterator;
+
 public class Start{
 
     public static void main(String[] args) {
@@ -22,7 +24,6 @@ public class Start{
 //        showService.listMoviesWithGenre("action");
 //        showService.listPlaysWithGenre("comedy");
 //        showService.list3DMovies();
-//        showService.list2DMovies();
-//        ShowRepository showRepository = RepositoryConfig.getInstance().getShowRepository();
+//        showService.list2DMovies()
     }
 }
