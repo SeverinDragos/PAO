@@ -30,10 +30,6 @@ public class Start{
 //        showService.listPlaysWithGenre("comedy");
 //        showService.list3DMovies();
 //        showService.list2DMovies()
-        Iterator<MovieTheater> it = RepositoryConfig.getInstance().getMovieTheaterRepository().getMovieTheaters().iterator();
-            while (it.hasNext()) {
-                System.out.println(it.next().toString());
-            }
 
     }
 }
