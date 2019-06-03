@@ -1,13 +1,18 @@
 package cinema;
 
 import cinema.configuration.RepositoryConfig;
+import cinema.domain.entity.Cinema;
+import cinema.domain.entity.MovieTheater;
 import cinema.domain.entity.Show;
+import cinema.domain.repository.CinemaRepository;
 import cinema.domain.repository.ShowRepository;
 import cinema.services.CinemaService;
 import cinema.services.ShowService;
 import cinema.tool.JDBCInitializer;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class Start{
 
@@ -25,5 +30,10 @@ public class Start{
 //        showService.listPlaysWithGenre("comedy");
 //        showService.list3DMovies();
 //        showService.list2DMovies()
+        Iterator<MovieTheater> it = RepositoryConfig.getInstance().getMovieTheaterRepository().getMovieTheaters().iterator();
+            while (it.hasNext()) {
+                System.out.println(it.next().toString());
+            }
+
     }
 }

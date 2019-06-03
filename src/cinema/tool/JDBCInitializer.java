@@ -6,9 +6,7 @@ public class JDBCInitializer {
     public static void initializeDB() {
         String Query;
         try(
-                //Pasul 1: conectarea la BD
                 Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "" );
-                //Pasul 2: crearea unui obiect de tip Statement
                 Statement statement = conn.createStatement();
         )
         {

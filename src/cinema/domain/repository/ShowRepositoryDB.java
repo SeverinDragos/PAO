@@ -15,9 +15,7 @@ public class ShowRepositoryDB implements ShowRepository{
     public ShowRepositoryDB() {
         ResultSet resultSet = null;
         try(
-                //Pasul 1: conectarea la BD
-                Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "" );
-                //Pasul 2: crearea unui obiect de tip Statement
+                Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "");
                 Statement statement = conn.createStatement();
         )
         {
@@ -46,8 +44,8 @@ public class ShowRepositoryDB implements ShowRepository{
         catch (SQLException e) {
             System.out.println("Eroare la citirea din baza de date!" + e);
         }
-        finally{
-            try{
+        finally {
+            try {
                 if (resultSet != null) {
                     resultSet.close();
                 }

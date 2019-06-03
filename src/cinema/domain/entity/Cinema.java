@@ -59,6 +59,7 @@ public class Cinema {
         return "Cinema{" +
                 "movieTheatersId=" + Arrays.toString(movieTheatersId) +
                 ", adress=" + adress +
+                ", id=" + id +
                 '}';
     }
 }

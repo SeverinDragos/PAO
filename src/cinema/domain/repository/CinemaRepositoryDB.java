@@ -1,5 +1,6 @@
 package cinema.domain.repository;
 
+import cinema.domain.entity.Adress;
 import cinema.domain.entity.Cinema;
 
 import java.sql.*;
@@ -12,25 +13,46 @@ public class CinemaRepositoryDB implements CinemaRepository {
 
     public CinemaRepositoryDB() {
         ResultSet resultSet = null;
+        ResultSet resultSetForCinemas = null;
+        PreparedStatement preparedStatement = null;
         try(
-                //Pasul 1: conectarea la BD
-                Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "" );
-                //Pasul 2: crearea unui obiect de tip Statement
+                Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "");
                 Statement statement = conn.createStatement();
         )
         {
+            resultSetForCinemas = statement.executeQuery("SELECT * FROM cinemas");
+            while(resultSetForCinemas.next()) {
+                int[] temp = new int[3];
+                int counter = 0;
+                preparedStatement = conn.prepareStatement("SELECT id FROM movietheaters WHERE cinema_id = ?");
+                preparedStatement.setInt(1, resultSetForCinemas.getInt("id"));
+                resultSet = preparedStatement.executeQuery();
+                while(resultSet.next()) {
+                    temp[counter++] = resultSet.getInt("id");
+                }
+                cinemas.add(new Cinema(temp,
+                                    new Adress(resultSetForCinemas.getString("city"), resultSetForCinemas.getString("mall")),
+                                    resultSetForCinemas.getInt("id")));
+            }
         }
         catch (SQLException e) {
             System.out.println("Eroare la citirea din baza de date!" + e);
         }
-        finally{
-            try{
+        finally {
+            try {
                 if (resultSet != null) {
                     resultSet.close();
                 }
+                if (resultSetForCinemas != null) {
+                    resultSetForCinemas.close();
+                }
+                if (preparedStatement != null) {
+                    preparedStatement.close();
+                }
+
             }
             catch (SQLException e) {
-                System.out.println("Eroare la inchiderea result set!" + e);
+                System.out.println("Eroare la inchiderea bazei de date!" + e);
             }
         }
     }
