@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4308eb3-a2af-4b65-b4f7-14544ad2bce2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cinema/ApplicationStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cinema/controller/GUIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cinema/tests/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PAO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PAO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServicesOutputFile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ServicesOutputFile.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PAO/cinema/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PAO/cinema/Start.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinema/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinema/configuration/RepositoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema/configuration/RepositoryConfig.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,71 +26,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinema/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/CinemaRepositoryDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2214#2215#0" expanded="true" />
-                <element signature="e#2244#2245#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/MovieTheaterRepositoryDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="78" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3503#3504#0" expanded="true" />
-                <element signature="e#3539#3540#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="26" selection-start-line="26" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cinema/ApplicationStarter.java">
+        <entry file="file://$PROJECT_DIR$/src/cinema/tests/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/main_scene.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinema/controller/GUIController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#161#162#0" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +55,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinema/services/CinemaService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="17">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema/domain/entity/Movie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/ShowRepositoryStatic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="40" column="66" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -143,15 +118,17 @@
         <option value="$PROJECT_DIR$/src/cinema/tool/JDBCInitializer.java" />
         <option value="$PROJECT_DIR$/src/cinema/domain/entity/Cinema.java" />
         <option value="$PROJECT_DIR$/src/cinema/domain/repository/ShowRepositoryDB.java" />
-        <option value="$PROJECT_DIR$/src/cinema/configuration/RepositoryConfig.java" />
         <option value="$PROJECT_DIR$/src/cinema/domain/repository/MovieTheaterRepositoryDB.java" />
         <option value="$PROJECT_DIR$/src/cinema/controller/GUICOntroller.fxml" />
         <option value="$PROJECT_DIR$/src/cinema/ApplicationStarter.java" />
-        <option value="$PROJECT_DIR$/src/cinema/Start.java" />
         <option value="$PROJECT_DIR$/src/cinema/services/GUIService.java" />
         <option value="$PROJECT_DIR$/src/cinema/domain/repository/CinemaRepositoryDB.java" />
         <option value="$PROJECT_DIR$/src/cinema/services/CinemaServiceGUI.java" />
         <option value="$PROJECT_DIR$/src/cinema/controller/GUIController.java" />
+        <option value="$PROJECT_DIR$/src/cinema/TestClass.java" />
+        <option value="$PROJECT_DIR$/src/cinema/configuration/RepositoryConfig.java" />
+        <option value="$PROJECT_DIR$/src/cinema/Start.java" />
+        <option value="$PROJECT_DIR$/src/cinema/tests/TestClass.java" />
       </list>
     </option>
   </component>
@@ -169,87 +146,73 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
+              <item name="PAO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
+              <item name="PAO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
+              <item name="PAO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
+              <item name="PAO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
+              <item name="PAO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PAO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
+              <item name="PAO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PAO Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PAO Git" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/javafx-sdk-11.0.2/lib" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/plugins/junit" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -263,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ApplicationStarter">
+  <component name="RunManager" selected="JUnit.TestClass">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -276,7 +239,7 @@
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Dragos\Downloads\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cinema.*" />
+          <option name="PATTERN" value="cinema.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -290,7 +253,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cinema.*" />
+          <option name="PATTERN" value="cinema.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -300,6 +263,24 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="PAO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cinema.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cinema.tests" />
+      <option name="MAIN_CLASS_NAME" value="cinema.tests.TestClass" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -332,11 +313,12 @@
     <list>
       <item itemvalue="Application.ApplicationStarter" />
       <item itemvalue="Application.Start" />
+      <item itemvalue="JUnit.TestClass" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApplicationStarter" />
         <item itemvalue="Application.Start" />
+        <item itemvalue="Application.ApplicationStarter" />
       </list>
     </recent_temporary>
   </component>
@@ -361,6 +343,17 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestClass - 2019.07.05 at 12h 39m 34s.xml">
+      <configuration name="TestClass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass - 2019.07.05 at 12h 41m 00s.xml">
+      <configuration name="TestClass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass - 2019.07.05 at 12h 41m 11s.xml">
+      <configuration name="TestClass" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -371,20 +364,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22622108" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3270525" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49840087" visible="true" weight="0.29035753" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49840087" weight="0.28936744" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -445,16 +437,7 @@
     <entry file="file://$PROJECT_DIR$/src/cinema/domain/entity/Show.java" />
     <entry file="file://$PROJECT_DIR$/PlayFile.csv" />
     <entry file="file://$PROJECT_DIR$/MovieFile.csv" />
-    <entry file="file://$PROJECT_DIR$/MovieTheaterFile.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieTheaterFile.csv" />
     <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/CinemaRepositoryStatic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -462,30 +445,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CinemaFile.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/ShowRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/ShowRepositoryStatic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CinemaFile.csv" />
     <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/ShowRepositoryFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -504,13 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/domain/entity/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -569,48 +522,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/configuration/RepositoryConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinema/controller/GUIController.fxml" />
-    <entry file="jar://$USER_HOME$/Downloads/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/com/sun/javafx/application/LauncherImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11371">
-          <folding>
-            <element signature="e#0#27886#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/ShowRepositoryDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/main_scene.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/com/sun/javafx/application/LauncherImpl.class" />
+    <entry file="file://$PROJECT_DIR$/src/resources/main_scene.fxml" />
     <entry file="file://$PROJECT_DIR$/src/cinema/tool/JDBCInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2266">
@@ -618,19 +532,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/services/GUIService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema/services/GUIService.java" />
+    <entry file="file://$PROJECT_DIR$/src/cinema/services/CinemaServiceGUI.java" />
     <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/CinemaRepositoryDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
+        <state relative-caret-position="-7">
           <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -640,29 +546,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/services/CinemaService.java">
+    <entry file="file://$PROJECT_DIR$/src/cinema/ApplicationStarter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/ShowRepositoryDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/MovieTheaterRepositoryDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="78" selection-end-column="9" />
+        <state relative-caret-position="1207">
+          <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3503#3504#0" expanded="true" />
             <element signature="e#3539#3540#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/services/CinemaServiceGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -676,14 +588,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinema/ApplicationStarter.java">
+    <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/ShowRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema/configuration/RepositoryConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1372#1373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema/services/CinemaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema/domain/entity/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema/domain/repository/ShowRepositoryStatic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="40" column="66" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinema/tests/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -745,7 +713,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
